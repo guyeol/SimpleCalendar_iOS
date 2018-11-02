@@ -20,7 +20,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="gEp-nv-V9t"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Daily" id="RJg-Z4-iRn"/>
+                    <tabBarItem key="tabBarItem" title="Daily" image="tab_bar_icon.png" id="RJg-Z4-iRn"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HrM-ei-znr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -36,7 +36,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="lEj-y9-81K"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Weekly" id="1Md-dc-Myb"/>
+                    <tabBarItem key="tabBarItem" title="Weekly" image="tab_bar_icon.png" id="1Md-dc-Myb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uLz-O3-72Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -52,7 +52,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="K8p-Qb-mLb"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Monthly" id="3hR-ss-WEP"/>
+                    <tabBarItem key="tabBarItem" title="Monthly" image="tab_bar_icon.png" id="3hR-ss-WEP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XmA-w3-bYf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -78,4 +78,7 @@
             <point key="canvasLocation" x="-3354" y="-304"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="tab_bar_icon.png" width="35" height="35"/>
+    </resources>
 </document>
