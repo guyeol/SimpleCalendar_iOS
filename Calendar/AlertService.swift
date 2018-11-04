@@ -28,6 +28,10 @@ class AlertService {
       let message = msgStr == "" ? nil : msgStr
       completion(title, message)
     }
+    let DestructiveAction = UIAlertAction(title: "취소", style: UIAlertActionStyle.destructive) { (result : UIAlertAction) -> Void in
+      print("취소")
+    }
+    alert.addAction(DestructiveAction)
     alert.addAction(action)
     vc.present(alert, animated: true)
   }

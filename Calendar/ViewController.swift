@@ -18,7 +18,7 @@ class ViewController: UIViewController {
   override func viewDidAppear(_ animated: Bool) {
     let mainTabController = storyboard?.instantiateViewController(withIdentifier: "CalendarTabController") as! CalendarTabController
     //첫 화면으로 띄울 탭 선택
-    mainTabController.selectedViewController = mainTabController.viewControllers?[2]
+    mainTabController.selectedViewController = mainTabController.viewControllers?[0]
     present(mainTabController, animated: true, completion: nil)
   }
   override func didReceiveMemoryWarning() {

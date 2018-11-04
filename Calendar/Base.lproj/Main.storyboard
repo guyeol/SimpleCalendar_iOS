@@ -18,9 +18,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DSA-N1-JZh">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DSA-N1-JZh">
                                 <rect key="frame" x="11" y="50" width="57" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="57" id="UE7-3p-hO5"/>
+                                </constraints>
                                 <state key="normal" title="&lt; 이전 날">
                                     <color key="titleColor" red="0.92156862750000001" green="0.078431372550000003" blue="0.078431372550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -28,9 +30,8 @@
                                     <action selector="backBtn:" destination="s7G-qg-M2z" eventType="touchUpInside" id="ogR-z7-isy"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FAN-QD-m0Q">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FAN-QD-m0Q">
                                 <rect key="frame" x="308" y="50" width="57" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="다음 날 &gt;">
                                     <color key="titleColor" red="0.92156862750000001" green="0.078431372550000003" blue="0.078431372550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -38,16 +39,18 @@
                                     <action selector="nextBtn:" destination="s7G-qg-M2z" eventType="touchUpInside" id="y3O-pv-dRo"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4G5-51-ZCl">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4G5-51-ZCl">
                                 <rect key="frame" x="28" y="136" width="319" height="276"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="276" id="7Wd-q3-8Y5"/>
+                                </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P0e-9s-fsi">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P0e-9s-fsi">
                                 <rect key="frame" x="155" y="436" width="69" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="스케쥴 등록">
                                     <color key="titleColor" red="0.92156862750000001" green="0.078431372550000003" blue="0.078431372550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -55,9 +58,8 @@
                                     <action selector="addBtn:" destination="s7G-qg-M2z" eventType="touchUpInside" id="wYm-Ls-lxI"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cBW-i9-leB">
-                                <rect key="frame" x="153" y="45" width="73" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cBW-i9-leB">
+                                <rect key="frame" x="107" y="50" width="165" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -65,7 +67,19 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="DSA-N1-JZh" firstAttribute="leading" secondItem="gEp-nv-V9t" secondAttribute="leading" constant="11" id="0Fc-Wa-I2X"/>
+                            <constraint firstItem="4G5-51-ZCl" firstAttribute="top" secondItem="DEj-by-cdj" secondAttribute="top" constant="136" id="4Wk-cL-gmk"/>
+                            <constraint firstItem="P0e-9s-fsi" firstAttribute="leading" secondItem="gEp-nv-V9t" secondAttribute="leading" constant="155" id="8Iv-gf-Wo3"/>
+                            <constraint firstItem="DSA-N1-JZh" firstAttribute="baseline" secondItem="FAN-QD-m0Q" secondAttribute="baseline" id="Q7e-26-t7k"/>
+                            <constraint firstItem="P0e-9s-fsi" firstAttribute="centerX" secondItem="cBW-i9-leB" secondAttribute="centerX" id="X2w-TR-tc3"/>
                             <constraint firstItem="4G5-51-ZCl" firstAttribute="centerX" secondItem="DEj-by-cdj" secondAttribute="centerX" id="XJU-QT-Xk8"/>
+                            <constraint firstItem="FAN-QD-m0Q" firstAttribute="leading" secondItem="cBW-i9-leB" secondAttribute="trailing" constant="36" id="cVC-og-mId"/>
+                            <constraint firstItem="DSA-N1-JZh" firstAttribute="top" secondItem="cBW-i9-leB" secondAttribute="top" id="flh-3I-Tcw"/>
+                            <constraint firstItem="DSA-N1-JZh" firstAttribute="bottom" secondItem="cBW-i9-leB" secondAttribute="bottom" id="rmD-fk-n4s"/>
+                            <constraint firstItem="4G5-51-ZCl" firstAttribute="leading" secondItem="gEp-nv-V9t" secondAttribute="leading" constant="28" id="sy3-SQ-Rdp"/>
+                            <constraint firstItem="cBW-i9-leB" firstAttribute="leading" secondItem="DSA-N1-JZh" secondAttribute="trailing" constant="39" id="tEF-D7-eRh"/>
+                            <constraint firstItem="4G5-51-ZCl" firstAttribute="top" secondItem="DSA-N1-JZh" secondAttribute="bottom" constant="56" id="wqY-7W-VMM"/>
+                            <constraint firstItem="P0e-9s-fsi" firstAttribute="top" secondItem="4G5-51-ZCl" secondAttribute="bottom" constant="24" id="xJw-mv-6KG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gEp-nv-V9t"/>
                     </view>
@@ -77,7 +91,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HrM-ei-znr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2566" y="447"/>
+            <point key="canvasLocation" x="-2567.1999999999998" y="446.62668665667172"/>
         </scene>
         <!--Weekly-->
         <scene sceneID="szR-z9-sia">

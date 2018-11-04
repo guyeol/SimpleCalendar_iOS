@@ -13,9 +13,6 @@ class MonthViewController: UIViewController, UICollectionViewDelegate, UICollect
   @IBOutlet weak var Calendar: UICollectionView!
   @IBOutlet weak var MonthLabel: UILabel!
   
-  let Months = ["1월","2월","3월","4월","5월","6월","7월","8월","9월","10월","11월","12월"]
-  let DaysInMonth = [31,28,31,30,31,30,31,31,30,31,30,31]
-  
   var curMonth = String()
   var numOfEmptyBoxes = Int()
   var nextNumOfEmptyBoxes = Int()

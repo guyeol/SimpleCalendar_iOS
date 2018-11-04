@@ -15,7 +15,6 @@ import RealmSwift
   dynamic var day: Int = 0
   dynamic var title: String = ""
   dynamic var detail: String?
-  dynamic var isEnrolled: Bool?
   
   convenience init (year: Int, month: Int, day: Int, title: String, detail: String?) {
     self.init()
