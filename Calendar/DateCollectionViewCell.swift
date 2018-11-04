@@ -17,6 +17,7 @@ class DateCollectionViewCell: UICollectionViewCell {
     self.setCircularImageView()
   }
   
+  
   func setCircularImageView() {
     self.DateLabel.layer.cornerRadius = self.DateLabel.frame.width/2
   }
