@@ -6,5 +6,5 @@ target 'Calendar' do
   use_frameworks!
 
   # Pods for Calendar
-	pod 'RealmSwift', '2.8.3'
+	pod 'RealmSwift', '3.11.1'
 end

@@ -15,13 +15,12 @@ class DailyViewController: UIViewController {
   @IBOutlet weak var dayLabel: UILabel!
   @IBOutlet weak var scheduleField: UITextView!
   
-  var schedule: Results<Schedule>!
+  var schedule: Schedule?
   
   override func viewDidLoad() {
     super.viewDidLoad()
     dayLabel.text="\(year)년 \(month+1)월 \(day)일"
-    let realm = RealmService.shared.realm
-    schedule = realm.objects(Schedule.self)
+    fetch()
   }
   
   @IBAction func addBtn(_ sender: Any) {
@@ -29,6 +28,7 @@ class DailyViewController: UIViewController {
       let newSchedule = Schedule(year: year, month: month, day: day, title: title, detail: detail)
       RealmService.shared.create(newSchedule)
       print("\(year) \(month) \(day) \(title) \(detail!)")
+      self.scheduleField.text = detail
     }
     
   }
@@ -60,6 +60,11 @@ class DailyViewController: UIViewController {
   
   func fetch() {
     let realm = try! Realm()
-    schedule = realm.objects(Schedule.self)
+    let scope = realm.objects(Schedule.self).filter("day == %@", day)
+    if !scope.isEmpty {
+      let schedule = scope.first!
+      print("\(schedule.year)년 \(schedule.month)월 \(schedule.day)일 \(schedule.title) : \(schedule.detail)")
+    }
+    
   }
 }

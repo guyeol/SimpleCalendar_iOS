@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class WeeklyViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
   @IBOutlet weak var tableView: UITableView!
@@ -16,6 +17,7 @@ class WeeklyViewController: UIViewController, UITableViewDelegate, UITableViewDa
   override func viewDidLoad() {
     super.viewDidLoad()
     yearLabel.text = "\(year) 년"
+    print(Realm.Configuration.defaultConfiguration.fileURL!)
   }
   
   @IBAction func backBtn(_ sender: Any) {
